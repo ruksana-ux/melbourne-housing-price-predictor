@@ -232,7 +232,7 @@ with predict_tab:
             <div class="snapshot">
                 <b>{suburb}</b> · {type_label} · {rooms} bed<br>
                 {distance:.1f} km from the CBD · Postcode {postcode}<br>
-                Suburb median sale price: <b>${suburb_median:,.0f}</b><br>
+                Suburb median sale price (all types): <b>${suburb_median:,.0f}</b><br>
                 This estimate is <b>{comparison}</b>.
             </div>
             """,
