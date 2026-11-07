@@ -4,6 +4,9 @@ A machine learning web app that estimates the market value of a Melbourne proper
 The app is built with **scikit-learn** and **Streamlit** and is ready to deploy on
 **Streamlit Community Cloud** straight from GitHub.
 
+**Live app:** <https://melbourne-housing-price-predictor-mwi93xzkp86ndxegowp5cq.streamlit.app>
+**Source:** <https://github.com/ruksana-ux/melbourne-housing-price-predictor>
+
 ## Demo
 
 Enter a suburb, property type, number of bedrooms, distance from the CBD and a few
