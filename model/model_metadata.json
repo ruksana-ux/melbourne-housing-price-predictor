@@ -1,0 +1,3403 @@
+{
+  "trained_at": "2026-11-07T13:24:45+00:00",
+  "dataset_rows": 25154,
+  "split": {
+    "test_size": 0.2,
+    "train_rows": 20123,
+    "test_rows": 5031,
+    "random_state": 42
+  },
+  "best_model": "Gradient Boosting",
+  "metrics": {
+    "Linear Regression": {
+      "train": {
+        "rmse": 389570.8220850634,
+        "mae": 246249.84632340277,
+        "r2": 0.6380962878813523,
+        "mape_pct": 26.239139915373066
+      },
+      "test": {
+        "rmse": 403721.7823338362,
+        "mae": 248902.3273181975,
+        "r2": 0.626463727139618,
+        "mape_pct": 26.643392152570023
+      },
+      "fit_seconds": 1.6
+    },
+    "Random Forest": {
+      "train": {
+        "rmse": 300340.97698544175,
+        "mae": 176062.75937105934,
+        "r2": 0.7848955611646072,
+        "mape_pct": 16.06879617098808
+      },
+      "test": {
+        "rmse": 364397.72429143806,
+        "mae": 204845.18008207428,
+        "r2": 0.6956875437311463,
+        "mape_pct": 18.698786960039367
+      },
+      "fit_seconds": 26.8
+    },
+    "Gradient Boosting": {
+      "train": {
+        "rmse": 319621.9088884131,
+        "mae": 189456.31676479048,
+        "r2": 0.7563910297444001,
+        "mape_pct": 17.596529665970632
+      },
+      "test": {
+        "rmse": 357727.58694930805,
+        "mae": 202474.46078522026,
+        "r2": 0.7067261885955016,
+        "mape_pct": 18.650336082844927
+      },
+      "fit_seconds": 39.0
+    }
+  },
+  "expected_error": 202474,
+  "price": {
+    "median": 880000,
+    "min": 85000,
+    "max": 11200000
+  },
+  "features": {
+    "categorical": [
+      "Suburb",
+      "Type",
+      "Regionname",
+      "Postcode"
+    ],
+    "numeric": [
+      "Rooms",
+      "Distance",
+      "Propertycount"
+    ]
+  },
+  "type_labels": {
+    "h": "House",
+    "u": "Unit",
+    "t": "Townhouse"
+  },
+  "suburbs": [
+    "Abbotsford",
+    "Aberfeldie",
+    "Airport West",
+    "Albanvale",
+    "Albert Park",
+    "Albion",
+    "Alphington",
+    "Altona",
+    "Altona Meadows",
+    "Altona North",
+    "Ardeer",
+    "Armadale",
+    "Ascot Vale",
+    "Ashburton",
+    "Ashwood",
+    "Aspendale",
+    "Aspendale Gardens",
+    "Attwood",
+    "Avondale Heights",
+    "Bacchus Marsh",
+    "Balaclava",
+    "Balwyn",
+    "Balwyn North",
+    "Bayswater",
+    "Bayswater North",
+    "Beaconsfield",
+    "Beaconsfield Upper",
+    "Beaumaris",
+    "Bellfield",
+    "Bentleigh",
+    "Bentleigh East",
+    "Berwick",
+    "Black Rock",
+    "Blackburn",
+    "Blackburn North",
+    "Blackburn South",
+    "Bonbeach",
+    "Boronia",
+    "Botanic Ridge",
+    "Box Hill",
+    "Braybrook",
+    "Briar Hill",
+    "Brighton",
+    "Brighton East",
+    "Broadmeadows",
+    "Brookfield",
+    "Brooklyn",
+    "Brunswick",
+    "Brunswick East",
+    "Brunswick West",
+    "Bulla",
+    "Bulleen",
+    "Bullengarook",
+    "Bundoora",
+    "Burnley",
+    "Burnside",
+    "Burnside Heights",
+    "Burwood",
+    "Burwood East",
+    "Cairnlea",
+    "Camberwell",
+    "Campbellfield",
+    "Canterbury",
+    "Carlton",
+    "Carlton North",
+    "Carnegie",
+    "Caroline Springs",
+    "Carrum",
+    "Carrum Downs",
+    "Caulfield",
+    "Caulfield East",
+    "Caulfield North",
+    "Caulfield South",
+    "Chadstone",
+    "Chelsea",
+    "Chelsea Heights",
+    "Cheltenham",
+    "Chirnside Park",
+    "Clarinda",
+    "Clayton",
+    "Clayton South",
+    "Clifton Hill",
+    "Clyde North",
+    "Coburg",
+    "Coburg North",
+    "Coldstream",
+    "Collingwood",
+    "Coolaroo",
+    "Craigieburn",
+    "Cranbourne",
+    "Cranbourne East",
+    "Cranbourne North",
+    "Cranbourne West",
+    "Cremorne",
+    "Croydon",
+    "Croydon Hills",
+    "Croydon North",
+    "Croydon South",
+    "Dallas",
+    "Dandenong",
+    "Dandenong North",
+    "Darley",
+    "Deepdene",
+    "Deer Park",
+    "Delahey",
+    "Derrimut",
+    "Diamond Creek",
+    "Diggers Rest",
+    "Dingley Village",
+    "Docklands",
+    "Doncaster",
+    "Doncaster East",
+    "Donvale",
+    "Doreen",
+    "Doveton",
+    "Eaglemont",
+    "East Melbourne",
+    "Edithvale",
+    "Elsternwick",
+    "Eltham",
+    "Eltham North",
+    "Elwood",
+    "Emerald",
+    "Endeavour Hills",
+    "Epping",
+    "Essendon",
+    "Essendon North",
+    "Essendon West",
+    "Eumemmerring",
+    "Eynesbury",
+    "Fairfield",
+    "Fawkner",
+    "Ferntree Gully",
+    "Ferny Creek",
+    "Fitzroy",
+    "Fitzroy North",
+    "Flemington",
+    "Footscray",
+    "Forest Hill",
+    "Frankston",
+    "Frankston North",
+    "Frankston South",
+    "Gardenvale",
+    "Gisborne",
+    "Gisborne South",
+    "Gladstone Park",
+    "Glen Huntly",
+    "Glen Iris",
+    "Glen Waverley",
+    "Glenroy",
+    "Gowanbrae",
+    "Greensborough",
+    "Greenvale",
+    "Hadfield",
+    "Hallam",
+    "Hampton",
+    "Hampton East",
+    "Hampton Park",
+    "Hawthorn",
+    "Hawthorn East",
+    "Healesville",
+    "Heatherton",
+    "Heathmont",
+    "Heidelberg",
+    "Heidelberg Heights",
+    "Heidelberg West",
+    "Highett",
+    "Hillside",
+    "Hoppers Crossing",
+    "Hughesdale",
+    "Huntingdale",
+    "Hurstbridge",
+    "Ivanhoe",
+    "Ivanhoe East",
+    "Jacana",
+    "Kalkallo",
+    "Kealba",
+    "Keilor",
+    "Keilor Downs",
+    "Keilor East",
+    "Keilor Lodge",
+    "Keilor Park",
+    "Kensington",
+    "Kew",
+    "Kew East",
+    "Keysborough",
+    "Kilsyth",
+    "Kings Park",
+    "Kingsbury",
+    "Kingsville",
+    "Knoxfield",
+    "Kooyong",
+    "Kurunjang",
+    "Lalor",
+    "Langwarrin",
+    "Laverton",
+    "Lilydale",
+    "Lower Plenty",
+    "Lynbrook",
+    "Lysterfield",
+    "MacLeod",
+    "Maidstone",
+    "Malvern",
+    "Malvern East",
+    "Maribyrnong",
+    "McKinnon",
+    "Meadow Heights",
+    "Melbourne",
+    "Melton",
+    "Melton South",
+    "Melton West",
+    "Mentone",
+    "Mernda",
+    "Mickleham",
+    "Middle Park",
+    "Mill Park",
+    "Mitcham",
+    "Monbulk",
+    "Mont Albert",
+    "Montmorency",
+    "Montrose",
+    "Moonee Ponds",
+    "Moorabbin",
+    "Mooroolbark",
+    "Mordialloc",
+    "Mount Evelyn",
+    "Mount Waverley",
+    "Mulgrave",
+    "Murrumbeena",
+    "Narre Warren",
+    "New Gisborne",
+    "Newport",
+    "Niddrie",
+    "Noble Park",
+    "North Melbourne",
+    "North Warrandyte",
+    "Northcote",
+    "Notting Hill",
+    "Nunawading",
+    "Oak Park",
+    "Oakleigh",
+    "Oakleigh East",
+    "Oakleigh South",
+    "Officer",
+    "Ormond",
+    "Pakenham",
+    "Parkdale",
+    "Parkville",
+    "Pascoe Vale",
+    "Patterson Lakes",
+    "Plenty",
+    "Plumpton",
+    "Point Cook",
+    "Port Melbourne",
+    "Prahran",
+    "Preston",
+    "Princes Hill",
+    "Research",
+    "Reservoir",
+    "Richmond",
+    "Riddells Creek",
+    "Ringwood",
+    "Ringwood East",
+    "Ringwood North",
+    "Ripponlea",
+    "Rockbank",
+    "Rosanna",
+    "Rowville",
+    "Roxburgh Park",
+    "Sandhurst",
+    "Sandringham",
+    "Scoresby",
+    "Seabrook",
+    "Seaford",
+    "Seaholme",
+    "Seddon",
+    "Silvan",
+    "Skye",
+    "South Kingsville",
+    "South Melbourne",
+    "South Morang",
+    "South Yarra",
+    "Southbank",
+    "Spotswood",
+    "Springvale",
+    "Springvale South",
+    "St Albans",
+    "St Helena",
+    "St Kilda",
+    "Strathmore",
+    "Strathmore Heights",
+    "Sunbury",
+    "Sunshine",
+    "Sunshine North",
+    "Sunshine West",
+    "Surrey Hills",
+    "Sydenham",
+    "Tarneit",
+    "Taylors Hill",
+    "Taylors Lakes",
+    "Tecoma",
+    "Templestowe",
+    "Templestowe Lower",
+    "The Basin",
+    "Thomastown",
+    "Thornbury",
+    "Toorak",
+    "Travancore",
+    "Truganina",
+    "Tullamarine",
+    "Upwey",
+    "Vermont",
+    "Vermont South",
+    "Viewbank",
+    "Wallan",
+    "Wandin North",
+    "Wantirna",
+    "Wantirna South",
+    "Warrandyte",
+    "Warranwood",
+    "Waterways",
+    "Watsonia",
+    "Watsonia North",
+    "Wattle Glen",
+    "Werribee",
+    "Werribee South",
+    "West Footscray",
+    "West Melbourne",
+    "Westmeadows",
+    "Wheelers Hill",
+    "Whittlesea",
+    "Wildwood",
+    "Williams Landing",
+    "Williamstown",
+    "Williamstown North",
+    "Windsor",
+    "Wollert",
+    "Wonga Park",
+    "Wyndham Vale",
+    "Yallambie",
+    "Yarra Glen",
+    "Yarraville",
+    "croydon",
+    "viewbank"
+  ],
+  "postcodes": [
+    "3000",
+    "3002",
+    "3003",
+    "3006",
+    "3008",
+    "3011",
+    "3012",
+    "3013",
+    "3015",
+    "3016",
+    "3018",
+    "3019",
+    "3020",
+    "3021",
+    "3022",
+    "3023",
+    "3024",
+    "3025",
+    "3027",
+    "3028",
+    "3029",
+    "3030",
+    "3031",
+    "3032",
+    "3033",
+    "3034",
+    "3036",
+    "3037",
+    "3038",
+    "3039",
+    "3040",
+    "3041",
+    "3042",
+    "3043",
+    "3044",
+    "3046",
+    "3047",
+    "3048",
+    "3049",
+    "3051",
+    "3052",
+    "3053",
+    "3054",
+    "3055",
+    "3056",
+    "3057",
+    "3058",
+    "3059",
+    "3060",
+    "3061",
+    "3064",
+    "3065",
+    "3066",
+    "3067",
+    "3068",
+    "3070",
+    "3071",
+    "3072",
+    "3073",
+    "3074",
+    "3075",
+    "3076",
+    "3078",
+    "3079",
+    "3081",
+    "3082",
+    "3083",
+    "3084",
+    "3085",
+    "3087",
+    "3088",
+    "3089",
+    "3090",
+    "3093",
+    "3094",
+    "3095",
+    "3096",
+    "3099",
+    "3101",
+    "3102",
+    "3103",
+    "3104",
+    "3105",
+    "3106",
+    "3107",
+    "3108",
+    "3109",
+    "3111",
+    "3113",
+    "3115",
+    "3116",
+    "3121",
+    "3122",
+    "3123",
+    "3124",
+    "3125",
+    "3126",
+    "3127",
+    "3128",
+    "3130",
+    "3131",
+    "3132",
+    "3133",
+    "3134",
+    "3135",
+    "3136",
+    "3137",
+    "3138",
+    "3139",
+    "3140",
+    "3141",
+    "3142",
+    "3143",
+    "3144",
+    "3145",
+    "3146",
+    "3147",
+    "3148",
+    "3149",
+    "3150",
+    "3151",
+    "3152",
+    "3153",
+    "3154",
+    "3155",
+    "3156",
+    "3158",
+    "3160",
+    "3161",
+    "3162",
+    "3163",
+    "3165",
+    "3166",
+    "3167",
+    "3168",
+    "3169",
+    "3170",
+    "3171",
+    "3172",
+    "3173",
+    "3174",
+    "3175",
+    "3177",
+    "3178",
+    "3179",
+    "3180",
+    "3181",
+    "3182",
+    "3183",
+    "3184",
+    "3185",
+    "3186",
+    "3187",
+    "3188",
+    "3189",
+    "3190",
+    "3191",
+    "3192",
+    "3193",
+    "3194",
+    "3195",
+    "3196",
+    "3197",
+    "3198",
+    "3199",
+    "3200",
+    "3201",
+    "3202",
+    "3204",
+    "3205",
+    "3206",
+    "3207",
+    "3335",
+    "3337",
+    "3338",
+    "3340",
+    "3427",
+    "3428",
+    "3429",
+    "3431",
+    "3437",
+    "3438",
+    "3750",
+    "3752",
+    "3754",
+    "3756",
+    "3757",
+    "3765",
+    "3770",
+    "3775",
+    "3777",
+    "3782",
+    "3786",
+    "3793",
+    "3795",
+    "3796",
+    "3802",
+    "3803",
+    "3805",
+    "3806",
+    "3807",
+    "3808",
+    "3809",
+    "3810",
+    "3910",
+    "3975",
+    "3976",
+    "3977",
+    "3978"
+  ],
+  "regions": [
+    "Eastern Metropolitan",
+    "Eastern Victoria",
+    "Northern Metropolitan",
+    "Northern Victoria",
+    "South-Eastern Metropolitan",
+    "Southern Metropolitan",
+    "Western Metropolitan",
+    "Western Victoria"
+  ],
+  "suburb_defaults": {
+    "Abbotsford": {
+      "postcode": "3067",
+      "region": "Northern Metropolitan",
+      "propertycount": 4019,
+      "distance": 2.5,
+      "type": "h",
+      "median_price": 1030000
+    },
+    "Aberfeldie": {
+      "postcode": "3040",
+      "region": "Western Metropolitan",
+      "propertycount": 1543,
+      "distance": 8.3,
+      "type": "h",
+      "median_price": 1300000
+    },
+    "Airport West": {
+      "postcode": "3042",
+      "region": "Western Metropolitan",
+      "propertycount": 3464,
+      "distance": 10.4,
+      "type": "h",
+      "median_price": 755000
+    },
+    "Albanvale": {
+      "postcode": "3021",
+      "region": "Western Metropolitan",
+      "propertycount": 1899,
+      "distance": 14.0,
+      "type": "h",
+      "median_price": 540000
+    },
+    "Albert Park": {
+      "postcode": "3206",
+      "region": "Southern Metropolitan",
+      "propertycount": 3280,
+      "distance": 3.3,
+      "type": "h",
+      "median_price": 1830000
+    },
+    "Albion": {
+      "postcode": "3020",
+      "region": "Western Metropolitan",
+      "propertycount": 2185,
+      "distance": 10.5,
+      "type": "h",
+      "median_price": 635000
+    },
+    "Alphington": {
+      "postcode": "3078",
+      "region": "Northern Metropolitan",
+      "propertycount": 2211,
+      "distance": 6.4,
+      "type": "h",
+      "median_price": 1485000
+    },
+    "Altona": {
+      "postcode": "3018",
+      "region": "Western Metropolitan",
+      "propertycount": 5301,
+      "distance": 13.8,
+      "type": "h",
+      "median_price": 847500
+    },
+    "Altona Meadows": {
+      "postcode": "3028",
+      "region": "Western Metropolitan",
+      "propertycount": 7630,
+      "distance": 15.5,
+      "type": "h",
+      "median_price": 632500
+    },
+    "Altona North": {
+      "postcode": "3025",
+      "region": "Western Metropolitan",
+      "propertycount": 5132,
+      "distance": 11.1,
+      "type": "h",
+      "median_price": 770000
+    },
+    "Ardeer": {
+      "postcode": "3022",
+      "region": "Western Metropolitan",
+      "propertycount": 1281,
+      "distance": 12.8,
+      "type": "h",
+      "median_price": 624000
+    },
+    "Armadale": {
+      "postcode": "3143",
+      "region": "Southern Metropolitan",
+      "propertycount": 4836,
+      "distance": 6.3,
+      "type": "u",
+      "median_price": 1200000
+    },
+    "Ascot Vale": {
+      "postcode": "3032",
+      "region": "Western Metropolitan",
+      "propertycount": 6567,
+      "distance": 5.9,
+      "type": "h",
+      "median_price": 995000
+    },
+    "Ashburton": {
+      "postcode": "3147",
+      "region": "Southern Metropolitan",
+      "propertycount": 3052,
+      "distance": 11.0,
+      "type": "h",
+      "median_price": 1615000
+    },
+    "Ashwood": {
+      "postcode": "3147",
+      "region": "Southern Metropolitan",
+      "propertycount": 2894,
+      "distance": 12.2,
+      "type": "h",
+      "median_price": 1184250
+    },
+    "Aspendale": {
+      "postcode": "3195",
+      "region": "South-Eastern Metropolitan",
+      "propertycount": 2824,
+      "distance": 21.5,
+      "type": "h",
+      "median_price": 1000000
+    },
+    "Aspendale Gardens": {
+      "postcode": "3195",
+      "region": "South-Eastern Metropolitan",
+      "propertycount": 2243,
+      "distance": 21.5,
+      "type": "h",
+      "median_price": 882500
+    },
+    "Attwood": {
+      "postcode": "3049",
+      "region": "Northern Metropolitan",
+      "propertycount": 1130,
+      "distance": 16.5,
+      "type": "h",
+      "median_price": 820000
+    },
+    "Avondale Heights": {
+      "postcode": "3034",
+      "region": "Western Metropolitan",
+      "propertycount": 4502,
+      "distance": 10.5,
+      "type": "h",
+      "median_price": 808000
+    },
+    "Bacchus Marsh": {
+      "postcode": "3340",
+      "region": "Western Victoria",
+      "propertycount": 2871,
+      "distance": 37.5,
+      "type": "h",
+      "median_price": 431000
+    },
+    "Balaclava": {
+      "postcode": "3183",
+      "region": "Southern Metropolitan",
+      "propertycount": 2952,
+      "distance": 6.4,
+      "type": "u",
+      "median_price": 610750
+    },
+    "Balwyn": {
+      "postcode": "3103",
+      "region": "Southern Metropolitan",
+      "propertycount": 5682,
+      "distance": 9.7,
+      "type": "h",
+      "median_price": 1801000
+    },
+    "Balwyn North": {
+      "postcode": "3104",
+      "region": "Southern Metropolitan",
+      "propertycount": 7809,
+      "distance": 9.2,
+      "type": "h",
+      "median_price": 1713500
+    },
+    "Bayswater": {
+      "postcode": "3153",
+      "region": "Eastern Metropolitan",
+      "propertycount": 5030,
+      "distance": 23.2,
+      "type": "h",
+      "median_price": 750000
+    },
+    "Bayswater North": {
+      "postcode": "3153",
+      "region": "Eastern Metropolitan",
+      "propertycount": 3598,
+      "distance": 23.2,
+      "type": "h",
+      "median_price": 735000
+    },
+    "Beaconsfield": {
+      "postcode": "3807",
+      "region": "Eastern Victoria",
+      "propertycount": 2332,
+      "distance": 39.0,
+      "type": "h",
+      "median_price": 603500
+    },
+    "Beaconsfield Upper": {
+      "postcode": "3808",
+      "region": "Eastern Victoria",
+      "propertycount": 973,
+      "distance": 39.8,
+      "type": "h",
+      "median_price": 719500
+    },
+    "Beaumaris": {
+      "postcode": "3193",
+      "region": "Southern Metropolitan",
+      "propertycount": 5366,
+      "distance": 17.3,
+      "type": "h",
+      "median_price": 1660000
+    },
+    "Bellfield": {
+      "postcode": "3081",
+      "region": "Eastern Metropolitan",
+      "propertycount": 790,
+      "distance": 9.5,
+      "type": "h",
+      "median_price": 802500
+    },
+    "Bentleigh": {
+      "postcode": "3204",
+      "region": "Southern Metropolitan",
+      "propertycount": 6795,
+      "distance": 13.0,
+      "type": "h",
+      "median_price": 1300000
+    },
+    "Bentleigh East": {
+      "postcode": "3165",
+      "region": "Southern Metropolitan",
+      "propertycount": 10969,
+      "distance": 13.9,
+      "type": "h",
+      "median_price": 1153000
+    },
+    "Berwick": {
+      "postcode": "3806",
+      "region": "Eastern Victoria",
+      "propertycount": 17093,
+      "distance": 35.2,
+      "type": "h",
+      "median_price": 755000
+    },
+    "Black Rock": {
+      "postcode": "3193",
+      "region": "Southern Metropolitan",
+      "propertycount": 2866,
+      "distance": 17.3,
+      "type": "h",
+      "median_price": 1215000
+    },
+    "Blackburn": {
+      "postcode": "3130",
+      "region": "Eastern Metropolitan",
+      "propertycount": 5713,
+      "distance": 13.4,
+      "type": "h",
+      "median_price": 1300250
+    },
+    "Blackburn North": {
+      "postcode": "3130",
+      "region": "Eastern Metropolitan",
+      "propertycount": 2867,
+      "distance": 13.4,
+      "type": "h",
+      "median_price": 1155500
+    },
+    "Blackburn South": {
+      "postcode": "3130",
+      "region": "Eastern Metropolitan",
+      "propertycount": 4387,
+      "distance": 13.4,
+      "type": "h",
+      "median_price": 1070000
+    },
+    "Bonbeach": {
+      "postcode": "3196",
+      "region": "South-Eastern Metropolitan",
+      "propertycount": 2887,
+      "distance": 27.0,
+      "type": "h",
+      "median_price": 965000
+    },
+    "Boronia": {
+      "postcode": "3155",
+      "region": "Eastern Metropolitan",
+      "propertycount": 9704,
+      "distance": 25.0,
+      "type": "h",
+      "median_price": 777500
+    },
+    "Botanic Ridge": {
+      "postcode": "3977",
+      "region": "South-Eastern Metropolitan",
+      "propertycount": 1240,
+      "distance": 34.7,
+      "type": "h",
+      "median_price": 750000
+    },
+    "Box Hill": {
+      "postcode": "3128",
+      "region": "Eastern Metropolitan",
+      "propertycount": 4605,
+      "distance": 13.1,
+      "type": "h",
+      "median_price": 1325000
+    },
+    "Braybrook": {
+      "postcode": "3019",
+      "region": "Western Metropolitan",
+      "propertycount": 3589,
+      "distance": 10.8,
+      "type": "h",
+      "median_price": 680000
+    },
+    "Briar Hill": {
+      "postcode": "3088",
+      "region": "Eastern Metropolitan",
+      "propertycount": 1390,
+      "distance": 16.1,
+      "type": "h",
+      "median_price": 782500
+    },
+    "Brighton": {
+      "postcode": "3186",
+      "region": "Southern Metropolitan",
+      "propertycount": 10579,
+      "distance": 11.2,
+      "type": "h",
+      "median_price": 1772500
+    },
+    "Brighton East": {
+      "postcode": "3187",
+      "region": "Southern Metropolitan",
+      "propertycount": 6938,
+      "distance": 10.7,
+      "type": "h",
+      "median_price": 1632500
+    },
+    "Broadmeadows": {
+      "postcode": "3047",
+      "region": "Northern Metropolitan",
+      "propertycount": 4294,
+      "distance": 14.0,
+      "type": "h",
+      "median_price": 567500
+    },
+    "Brookfield": {
+      "postcode": "3338",
+      "region": "Western Victoria",
+      "propertycount": 3122,
+      "distance": 29.8,
+      "type": "h",
+      "median_price": 497000
+    },
+    "Brooklyn": {
+      "postcode": "3012",
+      "region": "Western Metropolitan",
+      "propertycount": 962,
+      "distance": 10.9,
+      "type": "h",
+      "median_price": 630000
+    },
+    "Brunswick": {
+      "postcode": "3056",
+      "region": "Northern Metropolitan",
+      "propertycount": 11918,
+      "distance": 5.2,
+      "type": "h",
+      "median_price": 938000
+    },
+    "Brunswick East": {
+      "postcode": "3057",
+      "region": "Northern Metropolitan",
+      "propertycount": 5533,
+      "distance": 4.5,
+      "type": "h",
+      "median_price": 910000
+    },
+    "Brunswick West": {
+      "postcode": "3055",
+      "region": "Northern Metropolitan",
+      "propertycount": 7082,
+      "distance": 5.9,
+      "type": "h",
+      "median_price": 812500
+    },
+    "Bulla": {
+      "postcode": "3428",
+      "region": "Western Metropolitan",
+      "propertycount": 271,
+      "distance": 22.9,
+      "type": "h",
+      "median_price": 665000
+    },
+    "Bulleen": {
+      "postcode": "3105",
+      "region": "Eastern Metropolitan",
+      "propertycount": 4480,
+      "distance": 11.8,
+      "type": "h",
+      "median_price": 1171000
+    },
+    "Bullengarook": {
+      "postcode": "3437",
+      "region": "Northern Victoria",
+      "propertycount": 249,
+      "distance": 45.9,
+      "type": "h",
+      "median_price": 865000
+    },
+    "Bundoora": {
+      "postcode": "3083",
+      "region": "Northern Metropolitan",
+      "propertycount": 10175,
+      "distance": 12.1,
+      "type": "h",
+      "median_price": 769000
+    },
+    "Burnley": {
+      "postcode": "3121",
+      "region": "Northern Metropolitan",
+      "propertycount": 438,
+      "distance": 2.4,
+      "type": "h",
+      "median_price": 1207750
+    },
+    "Burnside": {
+      "postcode": "3023",
+      "region": "Western Metropolitan",
+      "propertycount": 1607,
+      "distance": 14.8,
+      "type": "h",
+      "median_price": 620000
+    },
+    "Burnside Heights": {
+      "postcode": "3023",
+      "region": "Western Metropolitan",
+      "propertycount": 1686,
+      "distance": 14.8,
+      "type": "h",
+      "median_price": 598000
+    },
+    "Burwood": {
+      "postcode": "3125",
+      "region": "Southern Metropolitan",
+      "propertycount": 5678,
+      "distance": 11.7,
+      "type": "h",
+      "median_price": 1250000
+    },
+    "Burwood East": {
+      "postcode": "3151",
+      "region": "Eastern Metropolitan",
+      "propertycount": 4048,
+      "distance": 14.7,
+      "type": "h",
+      "median_price": 1076500
+    },
+    "Cairnlea": {
+      "postcode": "3023",
+      "region": "Western Metropolitan",
+      "propertycount": 2674,
+      "distance": 14.8,
+      "type": "h",
+      "median_price": 720000
+    },
+    "Camberwell": {
+      "postcode": "3124",
+      "region": "Southern Metropolitan",
+      "propertycount": 8920,
+      "distance": 7.8,
+      "type": "h",
+      "median_price": 1827000
+    },
+    "Campbellfield": {
+      "postcode": "3061",
+      "region": "Northern Metropolitan",
+      "propertycount": 1889,
+      "distance": 16.6,
+      "type": "h",
+      "median_price": 500000
+    },
+    "Canterbury": {
+      "postcode": "3126",
+      "region": "Southern Metropolitan",
+      "propertycount": 3265,
+      "distance": 9.0,
+      "type": "h",
+      "median_price": 2260000
+    },
+    "Carlton": {
+      "postcode": "3053",
+      "region": "Northern Metropolitan",
+      "propertycount": 6786,
+      "distance": 1.8,
+      "type": "h",
+      "median_price": 997500
+    },
+    "Carlton North": {
+      "postcode": "3054",
+      "region": "Northern Metropolitan",
+      "propertycount": 3106,
+      "distance": 3.2,
+      "type": "h",
+      "median_price": 1463000
+    },
+    "Carnegie": {
+      "postcode": "3163",
+      "region": "Southern Metropolitan",
+      "propertycount": 7822,
+      "distance": 11.4,
+      "type": "u",
+      "median_price": 817500
+    },
+    "Caroline Springs": {
+      "postcode": "3023",
+      "region": "Western Metropolitan",
+      "propertycount": 7719,
+      "distance": 14.8,
+      "type": "h",
+      "median_price": 582500
+    },
+    "Carrum": {
+      "postcode": "3197",
+      "region": "South-Eastern Metropolitan",
+      "propertycount": 1989,
+      "distance": 31.2,
+      "type": "h",
+      "median_price": 727750
+    },
+    "Carrum Downs": {
+      "postcode": "3201",
+      "region": "South-Eastern Metropolitan",
+      "propertycount": 8060,
+      "distance": 34.9,
+      "type": "h",
+      "median_price": 552500
+    },
+    "Caulfield": {
+      "postcode": "3162",
+      "region": "Southern Metropolitan",
+      "propertycount": 2379,
+      "distance": 8.9,
+      "type": "u",
+      "median_price": 644000
+    },
+    "Caulfield East": {
+      "postcode": "3145",
+      "region": "Southern Metropolitan",
+      "propertycount": 608,
+      "distance": 9.3,
+      "type": "h",
+      "median_price": 1000000
+    },
+    "Caulfield North": {
+      "postcode": "3161",
+      "region": "Southern Metropolitan",
+      "propertycount": 6923,
+      "distance": 8.1,
+      "type": "u",
+      "median_price": 616000
+    },
+    "Caulfield South": {
+      "postcode": "3162",
+      "region": "Southern Metropolitan",
+      "propertycount": 5051,
+      "distance": 9.3,
+      "type": "h",
+      "median_price": 1300000
+    },
+    "Chadstone": {
+      "postcode": "3148",
+      "region": "Southern Metropolitan",
+      "propertycount": 3582,
+      "distance": 13.6,
+      "type": "h",
+      "median_price": 970000
+    },
+    "Chelsea": {
+      "postcode": "3196",
+      "region": "South-Eastern Metropolitan",
+      "propertycount": 3906,
+      "distance": 27.0,
+      "type": "h",
+      "median_price": 860000
+    },
+    "Chelsea Heights": {
+      "postcode": "3196",
+      "region": "South-Eastern Metropolitan",
+      "propertycount": 2076,
+      "distance": 27.0,
+      "type": "h",
+      "median_price": 721000
+    },
+    "Cheltenham": {
+      "postcode": "3192",
+      "region": "Southern Metropolitan",
+      "propertycount": 9758,
+      "distance": 17.9,
+      "type": "h",
+      "median_price": 1040000
+    },
+    "Chirnside Park": {
+      "postcode": "3116",
+      "region": "Eastern Victoria",
+      "propertycount": 3789,
+      "distance": 27.1,
+      "type": "h",
+      "median_price": 765000
+    },
+    "Clarinda": {
+      "postcode": "3169",
+      "region": "South-Eastern Metropolitan",
+      "propertycount": 2727,
+      "distance": 17.5,
+      "type": "h",
+      "median_price": 878000
+    },
+    "Clayton": {
+      "postcode": "3168",
+      "region": "South-Eastern Metropolitan",
+      "propertycount": 5837,
+      "distance": 16.7,
+      "type": "h",
+      "median_price": 1045000
+    },
+    "Clayton South": {
+      "postcode": "3169",
+      "region": "South-Eastern Metropolitan",
+      "propertycount": 4734,
+      "distance": 17.5,
+      "type": "h",
+      "median_price": 830000
+    },
+    "Clifton Hill": {
+      "postcode": "3068",
+      "region": "Northern Metropolitan",
+      "propertycount": 2954,
+      "distance": 3.6,
+      "type": "h",
+      "median_price": 1180000
+    },
+    "Clyde North": {
+      "postcode": "3978",
+      "region": "Eastern Victoria",
+      "propertycount": 2987,
+      "distance": 43.4,
+      "type": "h",
+      "median_price": 635000
+    },
+    "Coburg": {
+      "postcode": "3058",
+      "region": "Northern Metropolitan",
+      "propertycount": 11204,
+      "distance": 7.8,
+      "type": "h",
+      "median_price": 901000
+    },
+    "Coburg North": {
+      "postcode": "3058",
+      "region": "Northern Metropolitan",
+      "propertycount": 3445,
+      "distance": 9.2,
+      "type": "h",
+      "median_price": 800000
+    },
+    "Coldstream": {
+      "postcode": "3770",
+      "region": "Eastern Victoria",
+      "propertycount": 810,
+      "distance": 33.0,
+      "type": "h",
+      "median_price": 630000
+    },
+    "Collingwood": {
+      "postcode": "3066",
+      "region": "Northern Metropolitan",
+      "propertycount": 4553,
+      "distance": 1.6,
+      "type": "u",
+      "median_price": 910000
+    },
+    "Coolaroo": {
+      "postcode": "3048",
+      "region": "Northern Metropolitan",
+      "propertycount": 1124,
+      "distance": 17.4,
+      "type": "h",
+      "median_price": 458500
+    },
+    "Craigieburn": {
+      "postcode": "3064",
+      "region": "Northern Metropolitan",
+      "propertycount": 15510,
+      "distance": 20.6,
+      "type": "h",
+      "median_price": 561250
+    },
+    "Cranbourne": {
+      "postcode": "3977",
+      "region": "South-Eastern Metropolitan",
+      "propertycount": 7680,
+      "distance": 34.7,
+      "type": "h",
+      "median_price": 572000
+    },
+    "Cranbourne East": {
+      "postcode": "3977",
+      "region": "South-Eastern Metropolitan",
+      "propertycount": 5462,
+      "distance": 34.7,
+      "type": "h",
+      "median_price": 440000
+    },
+    "Cranbourne North": {
+      "postcode": "3977",
+      "region": "South-Eastern Metropolitan",
+      "propertycount": 6464,
+      "distance": 34.7,
+      "type": "h",
+      "median_price": 645000
+    },
+    "Cranbourne West": {
+      "postcode": "3977",
+      "region": "South-Eastern Metropolitan",
+      "propertycount": 4939,
+      "distance": 34.7,
+      "type": "h",
+      "median_price": 523625
+    },
+    "Cremorne": {
+      "postcode": "3121",
+      "region": "Northern Metropolitan",
+      "propertycount": 1123,
+      "distance": 2.5,
+      "type": "h",
+      "median_price": 1048000
+    },
+    "Croydon": {
+      "postcode": "3136",
+      "region": "Eastern Metropolitan",
+      "propertycount": 11925,
+      "distance": 23.0,
+      "type": "h",
+      "median_price": 840500
+    },
+    "Croydon Hills": {
+      "postcode": "3136",
+      "region": "Eastern Metropolitan",
+      "propertycount": 1705,
+      "distance": 23.0,
+      "type": "h",
+      "median_price": 970000
+    },
+    "Croydon North": {
+      "postcode": "3136",
+      "region": "Eastern Metropolitan",
+      "propertycount": 2985,
+      "distance": 23.0,
+      "type": "h",
+      "median_price": 815000
+    },
+    "Croydon South": {
+      "postcode": "3136",
+      "region": "Eastern Metropolitan",
+      "propertycount": 1863,
+      "distance": 23.0,
+      "type": "h",
+      "median_price": 933500
+    },
+    "Dallas": {
+      "postcode": "3047",
+      "region": "Northern Metropolitan",
+      "propertycount": 2246,
+      "distance": 14.0,
+      "type": "h",
+      "median_price": 505750
+    },
+    "Dandenong": {
+      "postcode": "3175",
+      "region": "South-Eastern Metropolitan",
+      "propertycount": 10894,
+      "distance": 24.7,
+      "type": "h",
+      "median_price": 570000
+    },
+    "Dandenong North": {
+      "postcode": "3175",
+      "region": "South-Eastern Metropolitan",
+      "propertycount": 8322,
+      "distance": 24.7,
+      "type": "h",
+      "median_price": 640750
+    },
+    "Darley": {
+      "postcode": "3340",
+      "region": "Western Victoria",
+      "propertycount": 2992,
+      "distance": 37.5,
+      "type": "h",
+      "median_price": 380000
+    },
+    "Deepdene": {
+      "postcode": "3103",
+      "region": "Southern Metropolitan",
+      "propertycount": 892,
+      "distance": 7.9,
+      "type": "h",
+      "median_price": 1750000
+    },
+    "Deer Park": {
+      "postcode": "3023",
+      "region": "Western Metropolitan",
+      "propertycount": 6388,
+      "distance": 14.8,
+      "type": "h",
+      "median_price": 596000
+    },
+    "Delahey": {
+      "postcode": "3037",
+      "region": "Western Metropolitan",
+      "propertycount": 2898,
+      "distance": 18.0,
+      "type": "h",
+      "median_price": 577500
+    },
+    "Derrimut": {
+      "postcode": "3030",
+      "region": "Western Metropolitan",
+      "propertycount": 2276,
+      "distance": 14.7,
+      "type": "h",
+      "median_price": 750000
+    },
+    "Diamond Creek": {
+      "postcode": "3089",
+      "region": "Northern Victoria",
+      "propertycount": 4258,
+      "distance": 21.8,
+      "type": "h",
+      "median_price": 745000
+    },
+    "Diggers Rest": {
+      "postcode": "3427",
+      "region": "Western Metropolitan",
+      "propertycount": 1184,
+      "distance": 27.7,
+      "type": "h",
+      "median_price": 460000
+    },
+    "Dingley Village": {
+      "postcode": "3172",
+      "region": "South-Eastern Metropolitan",
+      "propertycount": 3940,
+      "distance": 22.2,
+      "type": "h",
+      "median_price": 875000
+    },
+    "Docklands": {
+      "postcode": "3008",
+      "region": "Southern Metropolitan",
+      "propertycount": 4707,
+      "distance": 1.9,
+      "type": "u",
+      "median_price": 795000
+    },
+    "Doncaster": {
+      "postcode": "3108",
+      "region": "Eastern Metropolitan",
+      "propertycount": 9028,
+      "distance": 13.9,
+      "type": "h",
+      "median_price": 1316000
+    },
+    "Doncaster East": {
+      "postcode": "3109",
+      "region": "Eastern Metropolitan",
+      "propertycount": 10999,
+      "distance": 14.3,
+      "type": "h",
+      "median_price": 1305000
+    },
+    "Donvale": {
+      "postcode": "3111",
+      "region": "Eastern Metropolitan",
+      "propertycount": 4790,
+      "distance": 16.1,
+      "type": "h",
+      "median_price": 1160000
+    },
+    "Doreen": {
+      "postcode": "3754",
+      "region": "Northern Victoria",
+      "propertycount": 7254,
+      "distance": 25.9,
+      "type": "h",
+      "median_price": 550000
+    },
+    "Doveton": {
+      "postcode": "3177",
+      "region": "South-Eastern Metropolitan",
+      "propertycount": 3533,
+      "distance": 28.8,
+      "type": "h",
+      "median_price": 508000
+    },
+    "Eaglemont": {
+      "postcode": "3084",
+      "region": "Eastern Metropolitan",
+      "propertycount": 1651,
+      "distance": 10.3,
+      "type": "h",
+      "median_price": 1718500
+    },
+    "East Melbourne": {
+      "postcode": "3002",
+      "region": "Northern Metropolitan",
+      "propertycount": 3040,
+      "distance": 1.5,
+      "type": "u",
+      "median_price": 897500
+    },
+    "Edithvale": {
+      "postcode": "3196",
+      "region": "South-Eastern Metropolitan",
+      "propertycount": 2546,
+      "distance": 27.0,
+      "type": "h",
+      "median_price": 870000
+    },
+    "Elsternwick": {
+      "postcode": "3185",
+      "region": "Southern Metropolitan",
+      "propertycount": 4898,
+      "distance": 8.5,
+      "type": "h",
+      "median_price": 1033500
+    },
+    "Eltham": {
+      "postcode": "3095",
+      "region": "Eastern Metropolitan",
+      "propertycount": 6990,
+      "distance": 18.0,
+      "type": "h",
+      "median_price": 915000
+    },
+    "Eltham North": {
+      "postcode": "3095",
+      "region": "Eastern Metropolitan",
+      "propertycount": 2346,
+      "distance": 18.0,
+      "type": "h",
+      "median_price": 900000
+    },
+    "Elwood": {
+      "postcode": "3184",
+      "region": "Southern Metropolitan",
+      "propertycount": 8989,
+      "distance": 7.7,
+      "type": "u",
+      "median_price": 718500
+    },
+    "Emerald": {
+      "postcode": "3782",
+      "region": "Eastern Victoria",
+      "propertycount": 2259,
+      "distance": 36.9,
+      "type": "h",
+      "median_price": 655000
+    },
+    "Endeavour Hills": {
+      "postcode": "3802",
+      "region": "South-Eastern Metropolitan",
+      "propertycount": 8443,
+      "distance": 28.5,
+      "type": "h",
+      "median_price": 676500
+    },
+    "Epping": {
+      "postcode": "3076",
+      "region": "Northern Metropolitan",
+      "propertycount": 10926,
+      "distance": 19.6,
+      "type": "h",
+      "median_price": 590750
+    },
+    "Essendon": {
+      "postcode": "3040",
+      "region": "Western Metropolitan",
+      "propertycount": 9264,
+      "distance": 8.0,
+      "type": "h",
+      "median_price": 1000000
+    },
+    "Essendon North": {
+      "postcode": "3041",
+      "region": "Western Metropolitan",
+      "propertycount": 1308,
+      "distance": 8.2,
+      "type": "h",
+      "median_price": 765000
+    },
+    "Essendon West": {
+      "postcode": "3040",
+      "region": "Western Metropolitan",
+      "propertycount": 588,
+      "distance": 9.8,
+      "type": "h",
+      "median_price": 1117500
+    },
+    "Eumemmerring": {
+      "postcode": "3177",
+      "region": "South-Eastern Metropolitan",
+      "propertycount": 845,
+      "distance": 28.8,
+      "type": "h",
+      "median_price": 580000
+    },
+    "Eynesbury": {
+      "postcode": "3338",
+      "region": "Western Victoria",
+      "propertycount": 852,
+      "distance": 29.8,
+      "type": "h",
+      "median_price": 700000
+    },
+    "Fairfield": {
+      "postcode": "3078",
+      "region": "Northern Metropolitan",
+      "propertycount": 2970,
+      "distance": 5.8,
+      "type": "h",
+      "median_price": 1064500
+    },
+    "Fawkner": {
+      "postcode": "3060",
+      "region": "Northern Metropolitan",
+      "propertycount": 5070,
+      "distance": 12.4,
+      "type": "h",
+      "median_price": 665000
+    },
+    "Ferntree Gully": {
+      "postcode": "3156",
+      "region": "Eastern Metropolitan",
+      "propertycount": 10788,
+      "distance": 24.8,
+      "type": "h",
+      "median_price": 760000
+    },
+    "Ferny Creek": {
+      "postcode": "3786",
+      "region": "Eastern Victoria",
+      "propertycount": 604,
+      "distance": 29.5,
+      "type": "h",
+      "median_price": 690000
+    },
+    "Fitzroy": {
+      "postcode": "3065",
+      "region": "Northern Metropolitan",
+      "propertycount": 5825,
+      "distance": 2.1,
+      "type": "h",
+      "median_price": 1111000
+    },
+    "Fitzroy North": {
+      "postcode": "3068",
+      "region": "Northern Metropolitan",
+      "propertycount": 6244,
+      "distance": 3.6,
+      "type": "h",
+      "median_price": 1288000
+    },
+    "Flemington": {
+      "postcode": "3031",
+      "region": "Northern Metropolitan",
+      "propertycount": 3593,
+      "distance": 4.4,
+      "type": "h",
+      "median_price": 862750
+    },
+    "Footscray": {
+      "postcode": "3011",
+      "region": "Western Metropolitan",
+      "propertycount": 7570,
+      "distance": 6.4,
+      "type": "h",
+      "median_price": 751000
+    },
+    "Forest Hill": {
+      "postcode": "3131",
+      "region": "Eastern Metropolitan",
+      "propertycount": 4385,
+      "distance": 15.4,
+      "type": "h",
+      "median_price": 1038750
+    },
+    "Frankston": {
+      "postcode": "3199",
+      "region": "South-Eastern Metropolitan",
+      "propertycount": 17055,
+      "distance": 38.0,
+      "type": "h",
+      "median_price": 638000
+    },
+    "Frankston North": {
+      "postcode": "3200",
+      "region": "Eastern Victoria",
+      "propertycount": 2500,
+      "distance": 36.9,
+      "type": "h",
+      "median_price": 496500
+    },
+    "Frankston South": {
+      "postcode": "3199",
+      "region": "South-Eastern Metropolitan",
+      "propertycount": 7566,
+      "distance": 38.0,
+      "type": "h",
+      "median_price": 860000
+    },
+    "Gardenvale": {
+      "postcode": "3185",
+      "region": "Southern Metropolitan",
+      "propertycount": 534,
+      "distance": 8.5,
+      "type": "u",
+      "median_price": 643500
+    },
+    "Gisborne": {
+      "postcode": "3437",
+      "region": "Northern Victoria",
+      "propertycount": 3376,
+      "distance": 45.9,
+      "type": "h",
+      "median_price": 643000
+    },
+    "Gisborne South": {
+      "postcode": "3437",
+      "region": "Northern Victoria",
+      "propertycount": 290,
+      "distance": 45.9,
+      "type": "h",
+      "median_price": 1140000
+    },
+    "Gladstone Park": {
+      "postcode": "3043",
+      "region": "Western Metropolitan",
+      "propertycount": 3285,
+      "distance": 12.9,
+      "type": "h",
+      "median_price": 653000
+    },
+    "Glen Huntly": {
+      "postcode": "3163",
+      "region": "Southern Metropolitan",
+      "propertycount": 2403,
+      "distance": 10.4,
+      "type": "u",
+      "median_price": 600000
+    },
+    "Glen Iris": {
+      "postcode": "3146",
+      "region": "Southern Metropolitan",
+      "propertycount": 10412,
+      "distance": 9.2,
+      "type": "h",
+      "median_price": 1535500
+    },
+    "Glen Waverley": {
+      "postcode": "3150",
+      "region": "Eastern Metropolitan",
+      "propertycount": 15321,
+      "distance": 16.7,
+      "type": "h",
+      "median_price": 1265050
+    },
+    "Glenroy": {
+      "postcode": "3046",
+      "region": "Northern Metropolitan",
+      "propertycount": 8870,
+      "distance": 13.0,
+      "type": "h",
+      "median_price": 644000
+    },
+    "Gowanbrae": {
+      "postcode": "3043",
+      "region": "Western Metropolitan",
+      "propertycount": 1071,
+      "distance": 13.6,
+      "type": "h",
+      "median_price": 724500
+    },
+    "Greensborough": {
+      "postcode": "3088",
+      "region": "Northern Metropolitan",
+      "propertycount": 8524,
+      "distance": 16.1,
+      "type": "h",
+      "median_price": 816000
+    },
+    "Greenvale": {
+      "postcode": "3059",
+      "region": "Northern Metropolitan",
+      "propertycount": 4864,
+      "distance": 20.4,
+      "type": "h",
+      "median_price": 715000
+    },
+    "Hadfield": {
+      "postcode": "3046",
+      "region": "Northern Metropolitan",
+      "propertycount": 2606,
+      "distance": 12.1,
+      "type": "h",
+      "median_price": 719500
+    },
+    "Hallam": {
+      "postcode": "3803",
+      "region": "South-Eastern Metropolitan",
+      "propertycount": 3728,
+      "distance": 32.3,
+      "type": "h",
+      "median_price": 645000
+    },
+    "Hampton": {
+      "postcode": "3188",
+      "region": "Southern Metropolitan",
+      "propertycount": 5454,
+      "distance": 13.7,
+      "type": "h",
+      "median_price": 1600000
+    },
+    "Hampton East": {
+      "postcode": "3188",
+      "region": "Southern Metropolitan",
+      "propertycount": 2356,
+      "distance": 13.8,
+      "type": "h",
+      "median_price": 1150000
+    },
+    "Hampton Park": {
+      "postcode": "3976",
+      "region": "South-Eastern Metropolitan",
+      "propertycount": 8256,
+      "distance": 33.3,
+      "type": "h",
+      "median_price": 622000
+    },
+    "Hawthorn": {
+      "postcode": "3122",
+      "region": "Southern Metropolitan",
+      "propertycount": 11308,
+      "distance": 5.3,
+      "type": "u",
+      "median_price": 806000
+    },
+    "Hawthorn East": {
+      "postcode": "3123",
+      "region": "Southern Metropolitan",
+      "propertycount": 6482,
+      "distance": 7.5,
+      "type": "h",
+      "median_price": 1320000
+    },
+    "Healesville": {
+      "postcode": "3777",
+      "region": "Northern Victoria",
+      "propertycount": 3307,
+      "distance": 45.2,
+      "type": "h",
+      "median_price": 688000
+    },
+    "Heatherton": {
+      "postcode": "3202",
+      "region": "South-Eastern Metropolitan",
+      "propertycount": 1048,
+      "distance": 18.7,
+      "type": "h",
+      "median_price": 790000
+    },
+    "Heathmont": {
+      "postcode": "3135",
+      "region": "Eastern Metropolitan",
+      "propertycount": 3794,
+      "distance": 21.3,
+      "type": "h",
+      "median_price": 932000
+    },
+    "Heidelberg": {
+      "postcode": "3084",
+      "region": "Eastern Metropolitan",
+      "propertycount": 2890,
+      "distance": 10.6,
+      "type": "h",
+      "median_price": 863000
+    },
+    "Heidelberg Heights": {
+      "postcode": "3081",
+      "region": "Eastern Metropolitan",
+      "propertycount": 2947,
+      "distance": 10.5,
+      "type": "h",
+      "median_price": 725000
+    },
+    "Heidelberg West": {
+      "postcode": "3081",
+      "region": "Eastern Metropolitan",
+      "propertycount": 2674,
+      "distance": 9.4,
+      "type": "h",
+      "median_price": 652000
+    },
+    "Highett": {
+      "postcode": "3190",
+      "region": "Southern Metropolitan",
+      "propertycount": 4794,
+      "distance": 16.0,
+      "type": "h",
+      "median_price": 1155000
+    },
+    "Hillside": {
+      "postcode": "3037",
+      "region": "Western Metropolitan",
+      "propertycount": 5556,
+      "distance": 18.0,
+      "type": "h",
+      "median_price": 652250
+    },
+    "Hoppers Crossing": {
+      "postcode": "3029",
+      "region": "Western Metropolitan",
+      "propertycount": 13830,
+      "distance": 18.4,
+      "type": "h",
+      "median_price": 557000
+    },
+    "Hughesdale": {
+      "postcode": "3166",
+      "region": "Southern Metropolitan",
+      "propertycount": 3145,
+      "distance": 13.0,
+      "type": "h",
+      "median_price": 980000
+    },
+    "Huntingdale": {
+      "postcode": "3166",
+      "region": "Southern Metropolitan",
+      "propertycount": 768,
+      "distance": 12.3,
+      "type": "h",
+      "median_price": 1040000
+    },
+    "Hurstbridge": {
+      "postcode": "3099",
+      "region": "Northern Victoria",
+      "propertycount": 1345,
+      "distance": 26.1,
+      "type": "h",
+      "median_price": 695000
+    },
+    "Ivanhoe": {
+      "postcode": "3079",
+      "region": "Eastern Metropolitan",
+      "propertycount": 5549,
+      "distance": 7.9,
+      "type": "h",
+      "median_price": 1075000
+    },
+    "Ivanhoe East": {
+      "postcode": "3079",
+      "region": "Eastern Metropolitan",
+      "propertycount": 1554,
+      "distance": 9.0,
+      "type": "h",
+      "median_price": 1745000
+    },
+    "Jacana": {
+      "postcode": "3047",
+      "region": "Northern Metropolitan",
+      "propertycount": 851,
+      "distance": 14.0,
+      "type": "h",
+      "median_price": 532500
+    },
+    "Kalkallo": {
+      "postcode": "3064",
+      "region": "Northern Metropolitan",
+      "propertycount": 121,
+      "distance": 20.6,
+      "type": "h",
+      "median_price": 615000
+    },
+    "Kealba": {
+      "postcode": "3021",
+      "region": "Western Metropolitan",
+      "propertycount": 1202,
+      "distance": 15.0,
+      "type": "h",
+      "median_price": 582000
+    },
+    "Keilor": {
+      "postcode": "3036",
+      "region": "Western Metropolitan",
+      "propertycount": 2339,
+      "distance": 14.5,
+      "type": "h",
+      "median_price": 775000
+    },
+    "Keilor Downs": {
+      "postcode": "3038",
+      "region": "Western Metropolitan",
+      "propertycount": 3656,
+      "distance": 15.5,
+      "type": "h",
+      "median_price": 670550
+    },
+    "Keilor East": {
+      "postcode": "3033",
+      "region": "Western Metropolitan",
+      "propertycount": 5629,
+      "distance": 12.8,
+      "type": "h",
+      "median_price": 808000
+    },
+    "Keilor Lodge": {
+      "postcode": "3038",
+      "region": "Western Metropolitan",
+      "propertycount": 570,
+      "distance": 15.5,
+      "type": "h",
+      "median_price": 653000
+    },
+    "Keilor Park": {
+      "postcode": "3042",
+      "region": "Western Metropolitan",
+      "propertycount": 1119,
+      "distance": 14.5,
+      "type": "h",
+      "median_price": 695000
+    },
+    "Kensington": {
+      "postcode": "3031",
+      "region": "Northern Metropolitan",
+      "propertycount": 5263,
+      "distance": 4.2,
+      "type": "h",
+      "median_price": 834500
+    },
+    "Kew": {
+      "postcode": "3101",
+      "region": "Southern Metropolitan",
+      "propertycount": 10331,
+      "distance": 5.6,
+      "type": "h",
+      "median_price": 1528500
+    },
+    "Kew East": {
+      "postcode": "3102",
+      "region": "Southern Metropolitan",
+      "propertycount": 2671,
+      "distance": 7.5,
+      "type": "h",
+      "median_price": 1750000
+    },
+    "Keysborough": {
+      "postcode": "3173",
+      "region": "South-Eastern Metropolitan",
+      "propertycount": 8459,
+      "distance": 25.2,
+      "type": "h",
+      "median_price": 771000
+    },
+    "Kilsyth": {
+      "postcode": "3137",
+      "region": "Eastern Metropolitan",
+      "propertycount": 4654,
+      "distance": 26.0,
+      "type": "h",
+      "median_price": 705750
+    },
+    "Kings Park": {
+      "postcode": "3021",
+      "region": "Western Metropolitan",
+      "propertycount": 2878,
+      "distance": 14.0,
+      "type": "h",
+      "median_price": 560000
+    },
+    "Kingsbury": {
+      "postcode": "3083",
+      "region": "Northern Metropolitan",
+      "propertycount": 1414,
+      "distance": 12.1,
+      "type": "h",
+      "median_price": 688500
+    },
+    "Kingsville": {
+      "postcode": "3012",
+      "region": "Western Metropolitan",
+      "propertycount": 1808,
+      "distance": 7.1,
+      "type": "h",
+      "median_price": 906250
+    },
+    "Knoxfield": {
+      "postcode": "3180",
+      "region": "Eastern Metropolitan",
+      "propertycount": 2949,
+      "distance": 23.3,
+      "type": "h",
+      "median_price": 870000
+    },
+    "Kooyong": {
+      "postcode": "3144",
+      "region": "Southern Metropolitan",
+      "propertycount": 394,
+      "distance": 5.9,
+      "type": "h",
+      "median_price": 1508000
+    },
+    "Kurunjang": {
+      "postcode": "3337",
+      "region": "Northern Victoria",
+      "propertycount": 3553,
+      "distance": 31.7,
+      "type": "h",
+      "median_price": 377500
+    },
+    "Lalor": {
+      "postcode": "3075",
+      "region": "Northern Metropolitan",
+      "propertycount": 8279,
+      "distance": 16.3,
+      "type": "h",
+      "median_price": 660250
+    },
+    "Langwarrin": {
+      "postcode": "3910",
+      "region": "Eastern Victoria",
+      "propertycount": 8743,
+      "distance": 41.0,
+      "type": "h",
+      "median_price": 565500
+    },
+    "Laverton": {
+      "postcode": "3028",
+      "region": "Western Metropolitan",
+      "propertycount": 2004,
+      "distance": 15.5,
+      "type": "h",
+      "median_price": 548750
+    },
+    "Lilydale": {
+      "postcode": "3140",
+      "region": "Eastern Victoria",
+      "propertycount": 6732,
+      "distance": 29.9,
+      "type": "h",
+      "median_price": 705000
+    },
+    "Lower Plenty": {
+      "postcode": "3093",
+      "region": "Eastern Metropolitan",
+      "propertycount": 1624,
+      "distance": 14.6,
+      "type": "h",
+      "median_price": 810000
+    },
+    "Lynbrook": {
+      "postcode": "3975",
+      "region": "South-Eastern Metropolitan",
+      "propertycount": 2322,
+      "distance": 33.8,
+      "type": "h",
+      "median_price": 613750
+    },
+    "Lysterfield": {
+      "postcode": "3156",
+      "region": "South-Eastern Metropolitan",
+      "propertycount": 2126,
+      "distance": 24.8,
+      "type": "h",
+      "median_price": 730000
+    },
+    "MacLeod": {
+      "postcode": "3085",
+      "region": "Northern Metropolitan",
+      "propertycount": 4168,
+      "distance": 12.7,
+      "type": "h",
+      "median_price": 795000
+    },
+    "Maidstone": {
+      "postcode": "3012",
+      "region": "Western Metropolitan",
+      "propertycount": 3873,
+      "distance": 9.2,
+      "type": "h",
+      "median_price": 715000
+    },
+    "Malvern": {
+      "postcode": "3144",
+      "region": "Southern Metropolitan",
+      "propertycount": 4675,
+      "distance": 7.4,
+      "type": "h",
+      "median_price": 1995000
+    },
+    "Malvern East": {
+      "postcode": "3145",
+      "region": "Southern Metropolitan",
+      "propertycount": 8801,
+      "distance": 11.2,
+      "type": "h",
+      "median_price": 1484500
+    },
+    "Maribyrnong": {
+      "postcode": "3032",
+      "region": "Western Metropolitan",
+      "propertycount": 4918,
+      "distance": 8.7,
+      "type": "h",
+      "median_price": 842500
+    },
+    "McKinnon": {
+      "postcode": "3204",
+      "region": "Southern Metropolitan",
+      "propertycount": 2397,
+      "distance": 11.4,
+      "type": "h",
+      "median_price": 1600000
+    },
+    "Meadow Heights": {
+      "postcode": "3048",
+      "region": "Northern Metropolitan",
+      "propertycount": 4704,
+      "distance": 17.4,
+      "type": "h",
+      "median_price": 473000
+    },
+    "Melbourne": {
+      "postcode": "3000",
+      "region": "Northern Metropolitan",
+      "propertycount": 17496,
+      "distance": 2.8,
+      "type": "u",
+      "median_price": 650000
+    },
+    "Melton": {
+      "postcode": "3337",
+      "region": "Western Victoria",
+      "propertycount": 3600,
+      "distance": 31.7,
+      "type": "h",
+      "median_price": 409000
+    },
+    "Melton South": {
+      "postcode": "3338",
+      "region": "Western Victoria",
+      "propertycount": 4718,
+      "distance": 29.8,
+      "type": "h",
+      "median_price": 408500
+    },
+    "Melton West": {
+      "postcode": "3337",
+      "region": "Northern Victoria",
+      "propertycount": 6065,
+      "distance": 31.7,
+      "type": "h",
+      "median_price": 427500
+    },
+    "Mentone": {
+      "postcode": "3194",
+      "region": "South-Eastern Metropolitan",
+      "propertycount": 6162,
+      "distance": 20.0,
+      "type": "h",
+      "median_price": 900000
+    },
+    "Mernda": {
+      "postcode": "3754",
+      "region": "Northern Metropolitan",
+      "propertycount": 5812,
+      "distance": 25.9,
+      "type": "h",
+      "median_price": 600000
+    },
+    "Mickleham": {
+      "postcode": "3064",
+      "region": "Northern Metropolitan",
+      "propertycount": 1158,
+      "distance": 20.6,
+      "type": "h",
+      "median_price": 577500
+    },
+    "Middle Park": {
+      "postcode": "3206",
+      "region": "Southern Metropolitan",
+      "propertycount": 2019,
+      "distance": 3.0,
+      "type": "h",
+      "median_price": 1850000
+    },
+    "Mill Park": {
+      "postcode": "3082",
+      "region": "Northern Metropolitan",
+      "propertycount": 10529,
+      "distance": 17.9,
+      "type": "h",
+      "median_price": 666000
+    },
+    "Mitcham": {
+      "postcode": "3132",
+      "region": "Eastern Metropolitan",
+      "propertycount": 6871,
+      "distance": 17.2,
+      "type": "h",
+      "median_price": 963500
+    },
+    "Monbulk": {
+      "postcode": "3793",
+      "region": "Eastern Victoria",
+      "propertycount": 1424,
+      "distance": 34.1,
+      "type": "h",
+      "median_price": 720000
+    },
+    "Mont Albert": {
+      "postcode": "3127",
+      "region": "Eastern Metropolitan",
+      "propertycount": 2079,
+      "distance": 11.8,
+      "type": "h",
+      "median_price": 1431000
+    },
+    "Montmorency": {
+      "postcode": "3094",
+      "region": "Eastern Metropolitan",
+      "propertycount": 3891,
+      "distance": 16.2,
+      "type": "h",
+      "median_price": 880000
+    },
+    "Montrose": {
+      "postcode": "3765",
+      "region": "Eastern Victoria",
+      "propertycount": 2493,
+      "distance": 28.8,
+      "type": "h",
+      "median_price": 735000
+    },
+    "Moonee Ponds": {
+      "postcode": "3039",
+      "region": "Western Metropolitan",
+      "propertycount": 6232,
+      "distance": 6.9,
+      "type": "h",
+      "median_price": 1117500
+    },
+    "Moorabbin": {
+      "postcode": "3189",
+      "region": "Southern Metropolitan",
+      "propertycount": 2555,
+      "distance": 14.6,
+      "type": "h",
+      "median_price": 1002500
+    },
+    "Mooroolbark": {
+      "postcode": "3138",
+      "region": "Eastern Victoria",
+      "propertycount": 8280,
+      "distance": 26.5,
+      "type": "h",
+      "median_price": 760000
+    },
+    "Mordialloc": {
+      "postcode": "3195",
+      "region": "South-Eastern Metropolitan",
+      "propertycount": 3650,
+      "distance": 21.5,
+      "type": "h",
+      "median_price": 908000
+    },
+    "Mount Evelyn": {
+      "postcode": "3796",
+      "region": "Eastern Victoria",
+      "propertycount": 3532,
+      "distance": 31.6,
+      "type": "h",
+      "median_price": 596500
+    },
+    "Mount Waverley": {
+      "postcode": "3149",
+      "region": "Eastern Metropolitan",
+      "propertycount": 13366,
+      "distance": 14.2,
+      "type": "h",
+      "median_price": 1379000
+    },
+    "Mulgrave": {
+      "postcode": "3170",
+      "region": "South-Eastern Metropolitan",
+      "propertycount": 7113,
+      "distance": 18.8,
+      "type": "h",
+      "median_price": 901500
+    },
+    "Murrumbeena": {
+      "postcode": "3163",
+      "region": "Southern Metropolitan",
+      "propertycount": 4442,
+      "distance": 12.1,
+      "type": "h",
+      "median_price": 1100000
+    },
+    "Narre Warren": {
+      "postcode": "3805",
+      "region": "South-Eastern Metropolitan",
+      "propertycount": 9376,
+      "distance": 34.1,
+      "type": "h",
+      "median_price": 635000
+    },
+    "New Gisborne": {
+      "postcode": "3438",
+      "region": "Northern Victoria",
+      "propertycount": 849,
+      "distance": 48.1,
+      "type": "h",
+      "median_price": 690000
+    },
+    "Newport": {
+      "postcode": "3015",
+      "region": "Western Metropolitan",
+      "propertycount": 5498,
+      "distance": 8.4,
+      "type": "h",
+      "median_price": 962000
+    },
+    "Niddrie": {
+      "postcode": "3042",
+      "region": "Western Metropolitan",
+      "propertycount": 2291,
+      "distance": 11.2,
+      "type": "h",
+      "median_price": 920000
+    },
+    "Noble Park": {
+      "postcode": "3174",
+      "region": "South-Eastern Metropolitan",
+      "propertycount": 11806,
+      "distance": 22.7,
+      "type": "h",
+      "median_price": 650000
+    },
+    "North Melbourne": {
+      "postcode": "3051",
+      "region": "Northern Metropolitan",
+      "propertycount": 6821,
+      "distance": 1.8,
+      "type": "u",
+      "median_price": 740500
+    },
+    "North Warrandyte": {
+      "postcode": "3113",
+      "region": "Eastern Metropolitan",
+      "propertycount": 1058,
+      "distance": 21.1,
+      "type": "h",
+      "median_price": 902000
+    },
+    "Northcote": {
+      "postcode": "3070",
+      "region": "Northern Metropolitan",
+      "propertycount": 11364,
+      "distance": 5.3,
+      "type": "h",
+      "median_price": 1190000
+    },
+    "Notting Hill": {
+      "postcode": "3168",
+      "region": "Southern Metropolitan",
+      "propertycount": 902,
+      "distance": 16.7,
+      "type": "h",
+      "median_price": 1075000
+    },
+    "Nunawading": {
+      "postcode": "3131",
+      "region": "Eastern Metropolitan",
+      "propertycount": 4973,
+      "distance": 15.4,
+      "type": "h",
+      "median_price": 950000
+    },
+    "Oak Park": {
+      "postcode": "3046",
+      "region": "Northern Metropolitan",
+      "propertycount": 2651,
+      "distance": 11.5,
+      "type": "h",
+      "median_price": 780000
+    },
+    "Oakleigh": {
+      "postcode": "3166",
+      "region": "Southern Metropolitan",
+      "propertycount": 3224,
+      "distance": 14.0,
+      "type": "h",
+      "median_price": 1045000
+    },
+    "Oakleigh East": {
+      "postcode": "3166",
+      "region": "Southern Metropolitan",
+      "propertycount": 2547,
+      "distance": 12.3,
+      "type": "h",
+      "median_price": 959000
+    },
+    "Oakleigh South": {
+      "postcode": "3167",
+      "region": "South-Eastern Metropolitan",
+      "propertycount": 3692,
+      "distance": 14.7,
+      "type": "h",
+      "median_price": 985100
+    },
+    "Officer": {
+      "postcode": "3809",
+      "region": "Eastern Victoria",
+      "propertycount": 2768,
+      "distance": 43.3,
+      "type": "h",
+      "median_price": 576500
+    },
+    "Ormond": {
+      "postcode": "3204",
+      "region": "Southern Metropolitan",
+      "propertycount": 3578,
+      "distance": 11.8,
+      "type": "h",
+      "median_price": 1076250
+    },
+    "Pakenham": {
+      "postcode": "3810",
+      "region": "Eastern Victoria",
+      "propertycount": 17384,
+      "distance": 47.3,
+      "type": "h",
+      "median_price": 502500
+    },
+    "Parkdale": {
+      "postcode": "3195",
+      "region": "South-Eastern Metropolitan",
+      "propertycount": 5087,
+      "distance": 21.5,
+      "type": "h",
+      "median_price": 1057500
+    },
+    "Parkville": {
+      "postcode": "3052",
+      "region": "Northern Metropolitan",
+      "propertycount": 2309,
+      "distance": 2.6,
+      "type": "h",
+      "median_price": 1300000
+    },
+    "Pascoe Vale": {
+      "postcode": "3044",
+      "region": "Northern Metropolitan",
+      "propertycount": 7485,
+      "distance": 9.9,
+      "type": "h",
+      "median_price": 745000
+    },
+    "Patterson Lakes": {
+      "postcode": "3197",
+      "region": "South-Eastern Metropolitan",
+      "propertycount": 3351,
+      "distance": 31.2,
+      "type": "h",
+      "median_price": 670000
+    },
+    "Plenty": {
+      "postcode": "3090",
+      "region": "Northern Victoria",
+      "propertycount": 777,
+      "distance": 20.1,
+      "type": "h",
+      "median_price": 1141000
+    },
+    "Plumpton": {
+      "postcode": "3335",
+      "region": "Western Metropolitan",
+      "propertycount": 1490,
+      "distance": 23.8,
+      "type": "h",
+      "median_price": 615250
+    },
+    "Point Cook": {
+      "postcode": "3030",
+      "region": "Western Metropolitan",
+      "propertycount": 15542,
+      "distance": 14.7,
+      "type": "h",
+      "median_price": 657100
+    },
+    "Port Melbourne": {
+      "postcode": "3207",
+      "region": "Southern Metropolitan",
+      "propertycount": 8648,
+      "distance": 3.8,
+      "type": "h",
+      "median_price": 1237250
+    },
+    "Prahran": {
+      "postcode": "3181",
+      "region": "Southern Metropolitan",
+      "propertycount": 7717,
+      "distance": 4.5,
+      "type": "h",
+      "median_price": 1021000
+    },
+    "Preston": {
+      "postcode": "3072",
+      "region": "Northern Metropolitan",
+      "propertycount": 14577,
+      "distance": 8.8,
+      "type": "h",
+      "median_price": 860000
+    },
+    "Princes Hill": {
+      "postcode": "3054",
+      "region": "Northern Metropolitan",
+      "propertycount": 1008,
+      "distance": 3.5,
+      "type": "h",
+      "median_price": 1575000
+    },
+    "Research": {
+      "postcode": "3095",
+      "region": "Eastern Metropolitan",
+      "propertycount": 938,
+      "distance": 18.0,
+      "type": "h",
+      "median_price": 810000
+    },
+    "Reservoir": {
+      "postcode": "3073",
+      "region": "Northern Metropolitan",
+      "propertycount": 21650,
+      "distance": 11.2,
+      "type": "h",
+      "median_price": 677750
+    },
+    "Richmond": {
+      "postcode": "3121",
+      "region": "Northern Metropolitan",
+      "propertycount": 14949,
+      "distance": 2.6,
+      "type": "h",
+      "median_price": 1035000
+    },
+    "Riddells Creek": {
+      "postcode": "3431",
+      "region": "Northern Victoria",
+      "propertycount": 1475,
+      "distance": 47.4,
+      "type": "h",
+      "median_price": 791000
+    },
+    "Ringwood": {
+      "postcode": "3134",
+      "region": "Eastern Metropolitan",
+      "propertycount": 7785,
+      "distance": 19.9,
+      "type": "h",
+      "median_price": 918000
+    },
+    "Ringwood East": {
+      "postcode": "3135",
+      "region": "Eastern Metropolitan",
+      "propertycount": 4407,
+      "distance": 21.3,
+      "type": "h",
+      "median_price": 868000
+    },
+    "Ringwood North": {
+      "postcode": "3134",
+      "region": "Eastern Metropolitan",
+      "propertycount": 3619,
+      "distance": 19.9,
+      "type": "h",
+      "median_price": 957500
+    },
+    "Ripponlea": {
+      "postcode": "3185",
+      "region": "Southern Metropolitan",
+      "propertycount": 821,
+      "distance": 7.4,
+      "type": "u",
+      "median_price": 605000
+    },
+    "Rockbank": {
+      "postcode": "3335",
+      "region": "Western Metropolitan",
+      "propertycount": 538,
+      "distance": 23.8,
+      "type": "h",
+      "median_price": 647500
+    },
+    "Rosanna": {
+      "postcode": "3084",
+      "region": "Eastern Metropolitan",
+      "propertycount": 3540,
+      "distance": 11.4,
+      "type": "h",
+      "median_price": 965500
+    },
+    "Rowville": {
+      "postcode": "3178",
+      "region": "South-Eastern Metropolitan",
+      "propertycount": 11667,
+      "distance": 23.5,
+      "type": "h",
+      "median_price": 912500
+    },
+    "Roxburgh Park": {
+      "postcode": "3064",
+      "region": "Northern Metropolitan",
+      "propertycount": 5833,
+      "distance": 20.6,
+      "type": "h",
+      "median_price": 550000
+    },
+    "Sandhurst": {
+      "postcode": "3977",
+      "region": "South-Eastern Metropolitan",
+      "propertycount": 1721,
+      "distance": 34.7,
+      "type": "h",
+      "median_price": 645000
+    },
+    "Sandringham": {
+      "postcode": "3191",
+      "region": "Southern Metropolitan",
+      "propertycount": 4497,
+      "distance": 15.2,
+      "type": "h",
+      "median_price": 1630000
+    },
+    "Scoresby": {
+      "postcode": "3179",
+      "region": "Eastern Metropolitan",
+      "propertycount": 2206,
+      "distance": 22.2,
+      "type": "h",
+      "median_price": 952000
+    },
+    "Seabrook": {
+      "postcode": "3028",
+      "region": "Western Metropolitan",
+      "propertycount": 1793,
+      "distance": 15.5,
+      "type": "h",
+      "median_price": 607500
+    },
+    "Seaford": {
+      "postcode": "3198",
+      "region": "South-Eastern Metropolitan",
+      "propertycount": 8077,
+      "distance": 35.4,
+      "type": "h",
+      "median_price": 767000
+    },
+    "Seaholme": {
+      "postcode": "3018",
+      "region": "Western Metropolitan",
+      "propertycount": 852,
+      "distance": 11.0,
+      "type": "h",
+      "median_price": 1000000
+    },
+    "Seddon": {
+      "postcode": "3011",
+      "region": "Western Metropolitan",
+      "propertycount": 2417,
+      "distance": 6.6,
+      "type": "h",
+      "median_price": 955000
+    },
+    "Silvan": {
+      "postcode": "3795",
+      "region": "Eastern Victoria",
+      "propertycount": 457,
+      "distance": 34.6,
+      "type": "h",
+      "median_price": 1077500
+    },
+    "Skye": {
+      "postcode": "3977",
+      "region": "South-Eastern Metropolitan",
+      "propertycount": 2756,
+      "distance": 34.7,
+      "type": "h",
+      "median_price": 537849
+    },
+    "South Kingsville": {
+      "postcode": "3015",
+      "region": "Western Metropolitan",
+      "propertycount": 984,
+      "distance": 9.1,
+      "type": "h",
+      "median_price": 825000
+    },
+    "South Melbourne": {
+      "postcode": "3205",
+      "region": "Southern Metropolitan",
+      "propertycount": 5943,
+      "distance": 1.9,
+      "type": "h",
+      "median_price": 1205000
+    },
+    "South Morang": {
+      "postcode": "3752",
+      "region": "Northern Metropolitan",
+      "propertycount": 7969,
+      "distance": 20.5,
+      "type": "h",
+      "median_price": 635000
+    },
+    "South Yarra": {
+      "postcode": "3141",
+      "region": "Southern Metropolitan",
+      "propertycount": 14887,
+      "distance": 3.3,
+      "type": "u",
+      "median_price": 801000
+    },
+    "Southbank": {
+      "postcode": "3006",
+      "region": "Southern Metropolitan",
+      "propertycount": 8400,
+      "distance": 1.2,
+      "type": "u",
+      "median_price": 595000
+    },
+    "Spotswood": {
+      "postcode": "3015",
+      "region": "Western Metropolitan",
+      "propertycount": 1223,
+      "distance": 7.7,
+      "type": "h",
+      "median_price": 895000
+    },
+    "Springvale": {
+      "postcode": "3171",
+      "region": "South-Eastern Metropolitan",
+      "propertycount": 7412,
+      "distance": 20.8,
+      "type": "h",
+      "median_price": 756500
+    },
+    "Springvale South": {
+      "postcode": "3172",
+      "region": "South-Eastern Metropolitan",
+      "propertycount": 4054,
+      "distance": 22.2,
+      "type": "h",
+      "median_price": 765250
+    },
+    "St Albans": {
+      "postcode": "3021",
+      "region": "Western Metropolitan",
+      "propertycount": 14042,
+      "distance": 14.0,
+      "type": "h",
+      "median_price": 617500
+    },
+    "St Helena": {
+      "postcode": "3088",
+      "region": "Eastern Metropolitan",
+      "propertycount": 915,
+      "distance": 16.1,
+      "type": "h",
+      "median_price": 903500
+    },
+    "St Kilda": {
+      "postcode": "3182",
+      "region": "Southern Metropolitan",
+      "propertycount": 13240,
+      "distance": 6.1,
+      "type": "u",
+      "median_price": 626000
+    },
+    "Strathmore": {
+      "postcode": "3041",
+      "region": "Western Metropolitan",
+      "propertycount": 3284,
+      "distance": 9.7,
+      "type": "h",
+      "median_price": 1182500
+    },
+    "Strathmore Heights": {
+      "postcode": "3041",
+      "region": "Western Metropolitan",
+      "propertycount": 389,
+      "distance": 12.5,
+      "type": "h",
+      "median_price": 830000
+    },
+    "Sunbury": {
+      "postcode": "3429",
+      "region": "Western Metropolitan",
+      "propertycount": 14092,
+      "distance": 31.7,
+      "type": "h",
+      "median_price": 530000
+    },
+    "Sunshine": {
+      "postcode": "3020",
+      "region": "Western Metropolitan",
+      "propertycount": 3755,
+      "distance": 12.6,
+      "type": "h",
+      "median_price": 720000
+    },
+    "Sunshine North": {
+      "postcode": "3020",
+      "region": "Western Metropolitan",
+      "propertycount": 4217,
+      "distance": 13.3,
+      "type": "h",
+      "median_price": 640000
+    },
+    "Sunshine West": {
+      "postcode": "3020",
+      "region": "Western Metropolitan",
+      "propertycount": 6763,
+      "distance": 13.5,
+      "type": "h",
+      "median_price": 591950
+    },
+    "Surrey Hills": {
+      "postcode": "3127",
+      "region": "Southern Metropolitan",
+      "propertycount": 5457,
+      "distance": 11.2,
+      "type": "h",
+      "median_price": 1550000
+    },
+    "Sydenham": {
+      "postcode": "3037",
+      "region": "Western Metropolitan",
+      "propertycount": 3640,
+      "distance": 18.0,
+      "type": "h",
+      "median_price": 600500
+    },
+    "Tarneit": {
+      "postcode": "3029",
+      "region": "Western Metropolitan",
+      "propertycount": 10160,
+      "distance": 18.4,
+      "type": "h",
+      "median_price": 526000
+    },
+    "Taylors Hill": {
+      "postcode": "3037",
+      "region": "Western Metropolitan",
+      "propertycount": 4242,
+      "distance": 18.0,
+      "type": "h",
+      "median_price": 685000
+    },
+    "Taylors Lakes": {
+      "postcode": "3038",
+      "region": "Western Metropolitan",
+      "propertycount": 5336,
+      "distance": 15.5,
+      "type": "h",
+      "median_price": 738500
+    },
+    "Tecoma": {
+      "postcode": "3160",
+      "region": "Eastern Victoria",
+      "propertycount": 869,
+      "distance": 30.4,
+      "type": "h",
+      "median_price": 855000
+    },
+    "Templestowe": {
+      "postcode": "3106",
+      "region": "Eastern Metropolitan",
+      "propertycount": 6202,
+      "distance": 15.5,
+      "type": "h",
+      "median_price": 1390000
+    },
+    "Templestowe Lower": {
+      "postcode": "3107",
+      "region": "Eastern Metropolitan",
+      "propertycount": 5420,
+      "distance": 13.8,
+      "type": "h",
+      "median_price": 1180000
+    },
+    "The Basin": {
+      "postcode": "3154",
+      "region": "Eastern Metropolitan",
+      "propertycount": 1690,
+      "distance": 27.0,
+      "type": "h",
+      "median_price": 580600
+    },
+    "Thomastown": {
+      "postcode": "3074",
+      "region": "Northern Metropolitan",
+      "propertycount": 7955,
+      "distance": 15.3,
+      "type": "h",
+      "median_price": 634750
+    },
+    "Thornbury": {
+      "postcode": "3071",
+      "region": "Northern Metropolitan",
+      "propertycount": 8870,
+      "distance": 7.0,
+      "type": "h",
+      "median_price": 925000
+    },
+    "Toorak": {
+      "postcode": "3142",
+      "region": "Southern Metropolitan",
+      "propertycount": 7217,
+      "distance": 4.6,
+      "type": "u",
+      "median_price": 1010000
+    },
+    "Travancore": {
+      "postcode": "3032",
+      "region": "Western Metropolitan",
+      "propertycount": 1052,
+      "distance": 4.3,
+      "type": "h",
+      "median_price": 1100000
+    },
+    "Truganina": {
+      "postcode": "3029",
+      "region": "Western Metropolitan",
+      "propertycount": 5811,
+      "distance": 18.4,
+      "type": "h",
+      "median_price": 545250
+    },
+    "Tullamarine": {
+      "postcode": "3043",
+      "region": "Western Metropolitan",
+      "propertycount": 3296,
+      "distance": 12.9,
+      "type": "h",
+      "median_price": 615500
+    },
+    "Upwey": {
+      "postcode": "3158",
+      "region": "Eastern Victoria",
+      "propertycount": 2591,
+      "distance": 29.3,
+      "type": "h",
+      "median_price": 825000
+    },
+    "Vermont": {
+      "postcode": "3133",
+      "region": "Eastern Metropolitan",
+      "propertycount": 4181,
+      "distance": 17.2,
+      "type": "h",
+      "median_price": 999000
+    },
+    "Vermont South": {
+      "postcode": "3133",
+      "region": "Eastern Metropolitan",
+      "propertycount": 4280,
+      "distance": 17.2,
+      "type": "h",
+      "median_price": 1208000
+    },
+    "Viewbank": {
+      "postcode": "3084",
+      "region": "Eastern Metropolitan",
+      "propertycount": 2698,
+      "distance": 13.8,
+      "type": "h",
+      "median_price": 960000
+    },
+    "Wallan": {
+      "postcode": "3756",
+      "region": "Northern Victoria",
+      "propertycount": 3988,
+      "distance": 44.2,
+      "type": "h",
+      "median_price": 484000
+    },
+    "Wandin North": {
+      "postcode": "3139",
+      "region": "Eastern Victoria",
+      "propertycount": 1130,
+      "distance": 35.2,
+      "type": "h",
+      "median_price": 1150000
+    },
+    "Wantirna": {
+      "postcode": "3152",
+      "region": "Eastern Metropolitan",
+      "propertycount": 5424,
+      "distance": 14.7,
+      "type": "h",
+      "median_price": 952000
+    },
+    "Wantirna South": {
+      "postcode": "3152",
+      "region": "Eastern Metropolitan",
+      "propertycount": 7082,
+      "distance": 14.7,
+      "type": "h",
+      "median_price": 1050000
+    },
+    "Warrandyte": {
+      "postcode": "3113",
+      "region": "Eastern Metropolitan",
+      "propertycount": 2003,
+      "distance": 21.1,
+      "type": "h",
+      "median_price": 1181000
+    },
+    "Warranwood": {
+      "postcode": "3134",
+      "region": "Eastern Metropolitan",
+      "propertycount": 1595,
+      "distance": 19.9,
+      "type": "h",
+      "median_price": 1015000
+    },
+    "Waterways": {
+      "postcode": "3195",
+      "region": "South-Eastern Metropolitan",
+      "propertycount": 709,
+      "distance": 21.5,
+      "type": "h",
+      "median_price": 1248500
+    },
+    "Watsonia": {
+      "postcode": "3087",
+      "region": "Northern Metropolitan",
+      "propertycount": 2329,
+      "distance": 14.9,
+      "type": "h",
+      "median_price": 740000
+    },
+    "Watsonia North": {
+      "postcode": "3087",
+      "region": "Northern Metropolitan",
+      "propertycount": 1442,
+      "distance": 14.5,
+      "type": "h",
+      "median_price": 762500
+    },
+    "Wattle Glen": {
+      "postcode": "3096",
+      "region": "Northern Victoria",
+      "propertycount": 642,
+      "distance": 23.6,
+      "type": "h",
+      "median_price": 987500
+    },
+    "Werribee": {
+      "postcode": "3030",
+      "region": "Western Metropolitan",
+      "propertycount": 16166,
+      "distance": 14.7,
+      "type": "h",
+      "median_price": 500000
+    },
+    "Werribee South": {
+      "postcode": "3030",
+      "region": "Western Metropolitan",
+      "propertycount": 821,
+      "distance": 14.7,
+      "type": "h",
+      "median_price": 497500
+    },
+    "West Footscray": {
+      "postcode": "3012",
+      "region": "Western Metropolitan",
+      "propertycount": 5058,
+      "distance": 8.2,
+      "type": "h",
+      "median_price": 830000
+    },
+    "West Melbourne": {
+      "postcode": "3003",
+      "region": "Northern Metropolitan",
+      "propertycount": 2230,
+      "distance": 3.1,
+      "type": "u",
+      "median_price": 1010000
+    },
+    "Westmeadows": {
+      "postcode": "3049",
+      "region": "Northern Metropolitan",
+      "propertycount": 2474,
+      "distance": 16.5,
+      "type": "h",
+      "median_price": 602500
+    },
+    "Wheelers Hill": {
+      "postcode": "3150",
+      "region": "South-Eastern Metropolitan",
+      "propertycount": 7392,
+      "distance": 16.7,
+      "type": "h",
+      "median_price": 1170500
+    },
+    "Whittlesea": {
+      "postcode": "3757",
+      "region": "Northern Victoria",
+      "propertycount": 2170,
+      "distance": 35.5,
+      "type": "h",
+      "median_price": 472500
+    },
+    "Wildwood": {
+      "postcode": "3429",
+      "region": "Western Metropolitan",
+      "propertycount": 83,
+      "distance": 31.7,
+      "type": "h",
+      "median_price": 1030000
+    },
+    "Williams Landing": {
+      "postcode": "3027",
+      "region": "Western Metropolitan",
+      "propertycount": 1999,
+      "distance": 17.6,
+      "type": "h",
+      "median_price": 591000
+    },
+    "Williamstown": {
+      "postcode": "3016",
+      "region": "Western Metropolitan",
+      "propertycount": 6380,
+      "distance": 8.0,
+      "type": "h",
+      "median_price": 1270000
+    },
+    "Williamstown North": {
+      "postcode": "3016",
+      "region": "Western Metropolitan",
+      "propertycount": 802,
+      "distance": 8.9,
+      "type": "h",
+      "median_price": 871500
+    },
+    "Windsor": {
+      "postcode": "3181",
+      "region": "Southern Metropolitan",
+      "propertycount": 4380,
+      "distance": 5.1,
+      "type": "u",
+      "median_price": 865000
+    },
+    "Wollert": {
+      "postcode": "3750",
+      "region": "Northern Metropolitan",
+      "propertycount": 2940,
+      "distance": 25.5,
+      "type": "h",
+      "median_price": 586500
+    },
+    "Wonga Park": {
+      "postcode": "3115",
+      "region": "Eastern Victoria",
+      "propertycount": 1328,
+      "distance": 25.2,
+      "type": "h",
+      "median_price": 1357500
+    },
+    "Wyndham Vale": {
+      "postcode": "3024",
+      "region": "Western Metropolitan",
+      "propertycount": 5262,
+      "distance": 27.2,
+      "type": "h",
+      "median_price": 505700
+    },
+    "Yallambie": {
+      "postcode": "3085",
+      "region": "Northern Metropolitan",
+      "propertycount": 1369,
+      "distance": 15.0,
+      "type": "h",
+      "median_price": 781000
+    },
+    "Yarra Glen": {
+      "postcode": "3775",
+      "region": "Northern Victoria",
+      "propertycount": 1160,
+      "distance": 31.4,
+      "type": "h",
+      "median_price": 620000
+    },
+    "Yarraville": {
+      "postcode": "3013",
+      "region": "Western Metropolitan",
+      "propertycount": 6543,
+      "distance": 7.0,
+      "type": "h",
+      "median_price": 950000
+    },
+    "croydon": {
+      "postcode": "3136",
+      "region": "Eastern Metropolitan",
+      "propertycount": 11925,
+      "distance": 23.0,
+      "type": "h",
+      "median_price": 730000
+    },
+    "viewbank": {
+      "postcode": "3084",
+      "region": "Eastern Metropolitan",
+      "propertycount": 2698,
+      "distance": 8.9,
+      "type": "t",
+      "median_price": 885000
+    }
+  }
+}
