@@ -1,13 +1,13 @@
 ---
 title: Melbourne Housing Price Predictor
 emoji: 🏠
-colorFrom: teal
-colorTo: indigo
+colorFrom: green
+colorTo: blue
 sdk: docker
 app_port: 7860
 pinned: false
 license: mit
-short_description: Estimate Melbourne property prices with a trained ML pipeline
+short_description: Predict Melbourne housing prices with an ML model
 ---
 
 # Melbourne Housing Price Predictor
