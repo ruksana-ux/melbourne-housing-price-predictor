@@ -17,3 +17,6 @@ Thumbs.db
 
 # Local experiments
 notebooks/.ipynb_checkpoints/
+
+# Hugging Face staging build
+build/

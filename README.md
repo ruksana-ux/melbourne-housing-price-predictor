@@ -115,6 +115,39 @@ Make sure `.venv/` is not committed — it is already excluded by `.gitignore`.
 Every push to `main` triggers an automatic redeploy. If you change the dataset or
 retrain the model, commit the updated `model/` files.
 
+## Deploy to Hugging Face Spaces (Docker)
+
+This project includes the same Hugging Face Space setup used for the SuperKart app:
+a Docker-based Streamlit Space built from `space/` and staged into `build/hf-space`.
+
+1. Create a Space at <https://huggingface.co/new-space> (or let the script try):
+   - **SDK:** Docker
+   - **Hardware:** CPU basic
+   - **Visibility:** Public (recommended for a portfolio demo)
+2. Create a token with **write** scope at <https://huggingface.co/settings/tokens>.
+3. Build and deploy:
+
+```bash
+# inspect staging only
+python deploy_hf.py --no-upload
+
+# install uploader once (if needed)
+pip install huggingface_hub
+
+# create/update the Space
+# PowerShell:
+$env:HF_TOKEN="hf_..."
+python deploy_hf.py --space-id <your-username>/melbourne-housing-price-predictor
+
+# bash:
+HF_TOKEN=hf_xxx python deploy_hf.py --space-id <your-username>/melbourne-housing-price-predictor
+```
+
+The script uploads the staged app, data, model, `.streamlit` config, `Dockerfile`,
+and a Space `README.md` with the required YAML front matter. The Space will be
+available at `https://huggingface.co/spaces/<your-username>/melbourne-housing-price-predictor`
+once the Docker build finishes.
+
 ## Notes and limitations
 
 - The dataset is a historic Melbourne sales snapshot; prices are not adjusted for
